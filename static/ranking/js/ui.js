@@ -54,7 +54,7 @@ define(['jquery',
 			e.stopPropagation();
 			var $target = $('#' + $(this).data('id'));
 			$('#kittehs .detail').remove();
-			$(document).scrollTop($target.offset().top);
+			document.location.hash = $(this).data('id');
 			$target.trigger('click');
 		});
 

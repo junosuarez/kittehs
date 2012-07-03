@@ -15,5 +15,5 @@
 	</div>
 </div>
 
-<p>see the <a href="/kitteh/ranking" target="_parent">winningest kittehs</a>!</p>
+<p>see the <a href="/ranking" target="_parent">winningest kittehs</a>!</p>
 </div>

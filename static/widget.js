@@ -2,7 +2,8 @@
 /*globals document */
 (function (document, undefined) {
 	'use strict';
-	var first, each, JQwrapper, $, config, getConfig, template, cssRule, insertBug, init;
+	var first, each, JQwrapper, $, config, getConfig, template, cssRule, insertBug, init,
+		voteUrl = 'http://localhost:5000/vote';
 
 	// helper functions
 	first = function (items, predicate) {
@@ -225,7 +226,7 @@
 				$bug.hide();
 				$dropshadow.show();
 				$overlay.show();
-				$frame.get().contentWindow.location.href = '/kitteh/vote';
+				$frame.get().contentWindow.location.href = voteUrl;
 			};
 
 		$bug.on('click', open);

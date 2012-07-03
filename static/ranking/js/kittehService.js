@@ -3,7 +3,7 @@
 define(['jquery', 'model'], function ($, model) {
 	'use strict';
 
-	var serviceUrl = '/kitteh/service',
+	var serviceUrl = 'http://localhost:5000',
 		getKittehs,
 		vote,
 		getRankings;
