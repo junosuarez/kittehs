@@ -3,8 +3,7 @@
 define(['jquery', 'model'], function ($, model) {
 	'use strict';
 
-	var serviceUrl = 'http://localhost:5000',
-		getKittehs,
+	var getKittehs,
 		vote,
 		getRankings;
 
@@ -18,7 +17,7 @@ define(['jquery', 'model'], function ($, model) {
 		}
 
 		$.ajax({
-			url: serviceUrl + '/ballot',
+			url: '/ballot',
 			type: 'POST',
 			cache: false,
 			dataType: 'json',
@@ -47,7 +46,7 @@ define(['jquery', 'model'], function ($, model) {
 			}
 
 		return $.ajax({
-			url: serviceUrl + '/vote',
+			url: '/vote',
 			type: 'POST',
 			data: data,
 			success: updateModel,
@@ -66,7 +65,7 @@ define(['jquery', 'model'], function ($, model) {
 		}
 
 		return $.ajax({
-			url: serviceUrl + '/rankings',
+			url: '/rankings',
 			type: 'GET',
 			dataType: 'json',
 			success: updateModel,
