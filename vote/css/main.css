@@ -1,0 +1,47 @@
+body{
+	font-family: consolas, monaco, sans-serif;
+	text-align: center;
+	margin: 0;
+	background-color: #fff;
+}
+
+#wrapper{
+	width: 700px;
+	margin: auto;
+	overflow: hidden;
+}
+#kittehs{
+	float: left;
+	margin-bottom: 1em;
+}
+.kitteh{
+	width: 300px;
+	float: left;
+	text-align: center;
+}
+.kitteh.b{
+	float:right;
+}
+.kitteh img{
+	-webkit-transition: all .5s ease-in-out;
+	-moz-transition: all .5s ease-in-out;
+	-o-transition: all .5s ease-in-out;
+	-ms-transition: all .5s ease-in-out;
+	cursor: pointer;
+}
+.kitteh img:hover{
+	-webkit-transform: scale(1.07);
+	-moz-transform: scale(1.07);
+	-o-transform: scale(1.07);
+	-ms-transform: scale(1.07);
+}
+
+.divider{
+	float: left;
+	width: 100px;
+	line-height: 200px;
+}
+
+p{
+	clear:both;
+}

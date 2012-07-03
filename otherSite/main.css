@@ -1,0 +1,12 @@
+body{
+	font-family: papyrus, comic sans, courier;
+	font-style: italic;
+	background-color: #eeeef5;
+	margin:  2pc 1in;
+	padding: 0;
+}
+
+h1{
+	color: #c0ffee;
+	text-shadow: 0 0 12px #444;
+}

@@ -1,0 +1,34 @@
+final catdown
+
+-insert widget by including one js file
+
+js file loads almond,
+zepto, other dependencies?
+gets a list of kittens
+
+
+
+make the widget js load the configuration options from the querystring on the url
+load the configuration options from html5 data attrs on the script tag
+set far future expires headers
+
+
+
+make a barebones API service
+POST /ballot
+POST /vote
+GET /rankings
+GET /kitteh/{id}.jpg
+GET /kitteh/{id}[.json] - information about teh kitteh
+
+score
+
+static resources:
+/widget.js
+
+vote app
+-pull up a random pairing of kittehs
+
+ranking app
+-see all kittehs in rank order
+-hover to see w/l record against other top kittehs
