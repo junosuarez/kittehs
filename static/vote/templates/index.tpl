@@ -11,7 +11,7 @@
 	</div>
 	<div class="kitteh b">
 		<img src="<%=kittehBimg %>">
-		<input type="button" value="Vote for Kitteh b" />
+		<input type="button" value="Vote for Kitteh B" />
 	</div>
 </div>
 

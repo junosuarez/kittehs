@@ -37,18 +37,19 @@ define(['jquery', 'model'], function ($, model) {
 		}
 
 		var data = {
-				choice: choice === 'a' ? model.kittehA.get() : model.kittehB.get(),
+				choice: choice === 'a' ? model.kittehA.get().id : model.kittehB.get().id,
 				requestToken: model.requestToken.get()
 			},
 			updateModel = function () {
-				console.log('vote successful');
+				console.log('vote successful', data);
 				getKittehs();
 			}
 
 		return $.ajax({
 			url: '/vote',
 			type: 'POST',
-			data: data,
+			data: JSON.stringify(data),
+			contentType: 'application/json',
 			success: updateModel,
 			error: function () { 
 				alert('teh kittehs are unhappy with your choice and have decided to ignore it.');
