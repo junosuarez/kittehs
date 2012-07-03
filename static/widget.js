@@ -3,7 +3,7 @@
 (function (document, undefined) {
 	'use strict';
 	var first, each, JQwrapper, $, config, getConfig, template, cssRule, insertBug, init,
-		voteUrl = 'http://localhost:5000/vote';
+		voteUrl = 'http://freezing-snow-6975.herokuapp.com/vote';
 
 	// helper functions
 	first = function (items, predicate) {
