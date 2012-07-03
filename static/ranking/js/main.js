@@ -6,7 +6,9 @@ require.config({
 		"lodash": "../../lib/lodash-0.3.1.min",
 		"text": "../../lib/text",
 		"tpl": "../../lib/tpl",
-		"templates": "../templates"
+		"templates": "../templates",
+		"observable": "../../lib/observable",
+		"kittehService": "../../lib/kittehService"
 	}
 });
 
